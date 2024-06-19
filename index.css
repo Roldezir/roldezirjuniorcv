@@ -194,32 +194,39 @@ textarea:hover{
     
 }
 @media screen and (max-width: 720px) {
+    *{
+        box-sizing: border-box;
+    }
     h1{
         font-size: 200%;
     }
     nav{
+    
         position: absolute;
         flex-direction: column;
-        top: 18%;
+        top: 21%;
         left: 55%;
     }
     a{
-        font-size: 140%;
-        margin-bottom: 20%;
+        text-align: center;
+        font-size: 100%;
+        margin-bottom: 10%;
     }
     .fotoPerfil{
+        margin-top: 10%;
         width: 50%;
     }
     section{
         width: 90%;
         margin-left: 6%;
         margin-top: 0%;
-        font-size: 120%;
+        font-size: 105%;
     }
     .form{
-        width: 70%;
+        width: 100%;
     }
     .formacao_topicos{
+        font-size: 100%;
         width: 90%;
     }
     .fotoJogo1, .fotoJogo2, .fotoJogo3{
