@@ -132,6 +132,17 @@ textarea:hover{
         margin-top: -23%;
     }
 }
+@media screen and (max-width: 1920px) and (max-height: 1080px){
+    
+    .form{
+        width: 40%;
+    }
+    section{
+        width: 70%;
+        margin-left: 20%;
+        margin-top: -30%;
+    }
+}
 @media screen and (max-width: 1680px){
     section{
         box-sizing: border-box;
