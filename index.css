@@ -178,6 +178,14 @@ textarea:hover{
         margin-left: 37%;
         margin-top: -61%;
     }
+    nav{
+        margin-top: 20%;
+    }
+    .fotoSite4{
+        position: relative;
+        width: 90%;
+        left: 2%;
+    }
 }
 @media screen and (max-width: 1080px){
     h1{
@@ -245,7 +253,7 @@ textarea:hover{
         font-size: 100%;
         width: 90%;
     }
-    .fotoJogo1, .fotoJogo2, .fotoJogo3{
+    .fotoJogo1, .fotoJogo2, .fotoJogo3, .fotoSite4{
         width: 85%;
     }
     input , textarea, .linkEx{
