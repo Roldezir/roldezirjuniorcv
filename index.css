@@ -81,6 +81,11 @@ p{
     width: 35%;
     left: 2%;
 }
+.fotoSite4{
+    position: relative;
+    width: 35%;
+    left: 2%;
+}
 /*Define uma cor de fundo nos label*/
 label{
     color: orange;
