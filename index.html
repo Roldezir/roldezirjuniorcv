@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,39 +12,54 @@
     <!--Cabeçario-->
     <header>
         <!--Titulo principal-->
-        <h1>Curriculo Virtual Roldezir Zacarias</h1>
+        
+        <h1>Currículo Virtual</h1>
         <!--Barra de navegação e seus links-->
         <nav >
-            <a href="index.html" class="navLinks">Perfil</a>
-            <a href="formacao.html" class="navLinks">Formação Educacional</a>
+            <a href="index.html" class="navLinks"><u color="orange">Perfil</u></a>
+            <a href="formacao.html" class="navLinks">Formação</a>
             <a href="portifolio.html" class="navLinks">Portifólio</a>
             <a href="contato.html" class="navLinks">Contato</a>
         </nav>
 
     </header>
-    <!--Campo lateral para colocar minha foto-->
-    <aside>
-        <img src="foto1-Perfil.jpeg" alt="foto do Roldezir" class="fotoPerfil">
-    </aside>
+    
     <!--Conteúdo da página-->
     <section>
-        <!--Titulo secundário-->
-        <h2>Roldezir Zacarias</h2>
-        <!--Informações pessoais-->
-        <p>Me chamo Roldezir e sou um jovem de 22 anos do sexo masculino, nasci em 17/08/2001, 
-        sou casado e atuo na área de TI. Tenho várias habilidades, por exemplo: Programar em 
-        JavaScript, HTML e CSS; criar Logotipos, Cartazes, Posts e Videos para marketing; 
-        Concertar, Montar, Formatar computadores; tenho conhecimento avançado em Excel, World, 
-        Photoshop; tenho fluência em inglês; entendo um pouco sobre serviços de eletricista; 
-        consigo tocar vários instrumentos musicais e etc.</br></br>
-        Fascinado por TI estou sempre estudando sobre novas tecnologias e programação.
-        Atualmente tenho vontade de atuar como programador e desenvolver jogos, APPs sites 
-        e softwares. Meus "passa-tempo" são jogar no Computador, estudar sobre finanças e 
-        investimentos, frequentar igreja e programar.</br></br>Na parte de empreendedorismo 
-        tenho um instagram chamado RZ Tech onde compartilho alguns dos meus trabalhos de TI.
 
-        </p>
+        <img src="foto1-Perfil.png" alt="foto do Roldezir" class="fotoPerfil">
+        
+        <div class="ret1">
+           <h2 class="titulo">Roldezir Zacarias da Silva Junior</h2> 
+
+            <p class="texto"><br>Desenvolvedor Web Front-End: Freelancer<br>Sexo: Masculino<br>
+                Linguagens: HTML, CSS, Javascript, Python, PHP e SQL <br><br><br> Fascinado 
+                por TI estou sempre estudando sobre novas tecnologias e programação.
+            Meu objetivo é atuar como programador e desenvolver sites, APPs, softwares 
+            e jogos. Estudo sobre finanças, investimentos, novas técnologias e 
+            busco conhecer diferentes lógicas de programação.
+            </p>
+
+        </div>
+
+        <div class="ret2">
+            <h1 class="h1-ret2">Soft Skils</h1>
+
+            <nav class="nav-softskils"> 
+                    <li onmouseenter="overskil1()" onmouseout="outskils()">Proatividade</li>
+                    <li onmouseenter="overskil2()" onmouseout="outskils()">Criatividade</li>
+                    <li onmouseenter="overskil3()" onmouseout="outskils()">Falar em público</li>
+                    <li onmouseenter="overskil4()" onmouseout="outskils()">Negociação</li>
+                    <li onmouseenter="overskil5()" onmouseout="outskils()">Respeito</li>
+                    <li onmouseenter="overskil6()" onmouseout="outskils()">Resolver problemas</li>
+             </nav>
+            
+        </div>
+        
+        
+       
 
     </section>
+    <script src="softskils.js"></script>
 </body>
 </html>

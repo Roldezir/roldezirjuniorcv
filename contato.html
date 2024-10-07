@@ -4,46 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV Roldezir</title>
-
-    <!--Faz o link do arquivo CSS-->
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <!--Cabeçario-->
+    
     <header>
-        <!--Titulo principal-->
-        <h1>Curriculo Virtual Roldezir Zacarias</h1>
-        <!--Barra de navegação e seus links-->
+        
+        <h1>Curriculo Virtual</h1>
+       
         <nav >
             <a href="index.html" class="navLinks">Perfil</a>
-            <a href="formacao.html" class="navLinks">Formação Educacional</a>
+            <a href="formacao.html" class="navLinks">Formação</a>
             <a href="portifolio.html" class="navLinks">Portifólio</a>
-            <a href="contato.html" class="navLinks">Contato</a>
+            <a href="contato.html" class="navLinks"><u color="orange">Contato</u></a>
         </nav>
 
     </header>
-    <!--Campo lateral para colocar minha foto-->
-    <aside>
-        <img src="foto1-Perfil.jpeg" alt="foto do Roldezir" class="fotoPerfil">
-    </aside>
-    <!--Conteúdo da página-->
-    <section class="formacao_topicos">
-        <!--Titulo secundário-->
-        <h2 class="form">Contato:</h2>
-        <!--Formulário-->
-        <form action="">
-          
-            <label for="Telefone">Telefone:</label> <input type="button" name="telefone" value="(64) 98426-0645">
-            </br></br>
-            <label for="email">E-mail:</label> <input type="button" name="email" value="roldezirjunior@gmail.com">
-            </br></br>
-            <label for="instagram">Instagram:</label> <input type="button" name="instagram" value="@roldezirzacarias">
-            </br></br>
-            <label for="instagram">Instagram:</label> <input type="button" name="instagram" value="@rztech_informatica">
-            </br></br>
+    
+    <section class="section-contato">
+        
+        <img src="imgContato.png" alt="foto do Roldezir" class="imgContato">
+        
+        <div class="ret1-contato">
             
-        </form>
+            <h2 class="h2-contato">Contato</h2>
+
+            <a href="https://w.app/roldezirjunior" class="contato1 contatos" onmouseover="mudarlogo1()" onmouseout="voltarlogo1()"><img src="whatsappLogo.png" class="contato1img">WHATSAPP</a>
+            <a href="https://www.instagram.com/roldezirzacarias/profilecard/?igsh=ZHZjcXAwaWRqbG5r" class="contato2 contatos" onmouseover="mudarlogo2()" onmouseout="voltarlogo2()"><img src="instagramLogo.png" class="contato2img">INSTAGRAM</a>
+            <a href="https://www.linkedin.com/in/roldezir-zacarias-84aa94289" class="contato3 contatos" onmouseover="mudarlogo3()" onmouseout="voltarlogo3()"><img src="linkedinLogo.png" class="contato3img">LINKEDIN</a>
+            <div class="contato4 contatos" onmouseover="mudarlogo4()" onmouseout="voltarlogo4()" onclick="clicarGmail()"><img src="gmailLogo.png" class="contato4img">G-MAIL</div>
+
+
+        </div>
 
     </section>
+
+    <script src="redeshover.js"></script>
 </body>
 </html>

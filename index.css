@@ -1,263 +1,791 @@
 /*zera as margens do corpo da janela*/
 body{
     margin: 0%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
 }
-/*Estiliza o titulo principal*/
+header{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    height: 8.5%;
+}
+u { text-decoration-color: orange ;
+    text-decoration-thickness: 2px ;  
+}
+
 h1{
+    color: orange;
     box-sizing: border-box;
-    text-align: center;
+    left: 0%;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: orange;
-    padding: 2%;
-    margin: 0%;
+    position: absolute;
+    margin-left: 2%;
+    text-transform: uppercase;
 }
-/*Estiliza os links da barra de navegação*/
-a{
+h2{
+    color: white;
     box-sizing: border-box;
-    border: 3px orange solid;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: absolute;
+    top: 15%;
+    right: 0%;
+    margin-right: 15%;
+    font-size: 250%;
+    text-align: right;
+    animation: entradaAnim2 1s;
+}
+
+.navLinks{
+    box-sizing: border-box;
     font-size: larger;
     padding: 5px;
     text-decoration: none;
-    color: black;
+    color: white;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-transform: uppercase;
     margin: 5px;
+    
 }
-/*Enquadra a barra de navegação no centro e altera suas margens*/
+
 nav{
     justify-content: center;
     display: flex;
-    margin: 2%;
-}
-/*Muda a cor de fundo da barra de navegação quando o mouse passa por cima dos links*/
-.navLinks:hover{
-    background-color: orange;
-}
-/*Limita a largura do aside para não atrapalhar os outros elementos*/
-aside{
-    width:fit-content;
-}
-/*Estiliza a minha foto*/
-.fotoPerfil{
-    width: 35%;
-    margin: 3%;
-    border: 5px solid orange;
-}
-/*Estiliza o conteúdo central da página*/
-section{
-    position: absolute;
     margin-left: 20%;
-    margin-top: -30%;
+    margin-top: 1%;
+    left: 0%;
+    position: absolute;
+}
+
+.navLinks:hover{
+    color: orange;
+    animation: changeToOrange 1s;
+}
+
+.fotoPerfil{
+    width: 24%;
+    position: absolute;
+    left: 0%;
+    margin-left: 25%;
+    margin-top: 1%;
+    bottom: 4%;
+    animation: entradaAnim1 1s;
+}
+
+section{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: orange;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-/*Ajusta o preenchimento dos paragrafos*/
+
+.ret1{
+    background-color: black;
+    width: 60%;
+    right: 0%;
+    position: absolute;
+    top: 8%;
+    height: 80%;
+    z-index: -1;
+}
+.ret2{
+    background-color: white;
+    width: 100%;
+    top: 85%;
+    position: absolute;
+    bottom: 0%;
+    height: 15%;
+    z-index: 0;
+    box-shadow: 0px 5px 30px 4px white;
+}
+.h1-ret2{
+    color: black;
+    margin-inline: 46.5%;
+}
+.nav-softskils{
+    list-style-type: none;
+    width: 100%;
+    left: 0%;
+    bottom: 30%;
+    margin-inline: 0%;
+    position: absolute;
+    animation: entradaAnim3 2s;
+}
+li:hover{
+    background-color: black;
+    color: white;
+}
+li{
+    margin-inline: 2%;
+    background-color: orange;
+    width: 10%;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 100%;
+}
+
 p{
-    padding-right: 10%;
-    
+    color: white;
+    box-sizing: border-box;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: absolute;
+    top: 21%;
+    right: 0%;
+    margin-right: 15%;
+    font-size: 140%;
+    text-align: right;
+    width: 60%;
+    animation: entradaAnim1 1s;
 }
-/*Enquadra o titulo secundário da Formação educacional um pouco mais a esquerda do parágrafo*/
-.form{
+
+.ret1-formacao{
+    background-color: black;
+    width: 60%;
+    left: 0%;
+    position: absolute;
+    height: 100%;
+    z-index: -1;
+    text-align: left;
+    color: white;
+}
+.imgFormacao{
+    right: 0%;
+    position: absolute;
+    width: 40%;
+    top: 20%;
+    animation: entradaAnim4 2s;
+}
+
+.section-portifolio{
+    height: 210%;
+}
+.ret1-portifolio{
+    background-color: black;
+    width: 60%;
+    right: 0%;
+    position: absolute;
+    top: 0.75%;
+    z-index: -1;
+}
+.imgPortifolio{
+    left: 0%;
+    position: absolute;
+    width: 20%;
+    top: 20%;
+    margin-left: 10%;
+    animation: entradaAnim4 1s;
+}
+.h2-portifolio{
+    margin-top: 10%;
     position: relative;
-    left: -3%;
+    margin-right: 75%;
 }
-/*Enquadra o parágrafo um pouco mais a direita do titulo secundário da Formação educacional*/
-.formacao_topicos{
+h3{
     position: relative;
-    left: 3%;
+    color: white;
+    margin-left: 10%;
 }
-/*Enquadra as fotos dos 3 jogos do meu portifolio*/
-.fotoJogo1{
+.p-portifolio{
     position: relative;
-    width: 30%;
-    left: 2%;
+    margin-left: 10%;
+    text-align: left;
 }
+
 .fotoJogo2{
     position: relative;
     width: 35%;
-    left: 2%;
+    margin-left: 10%;
+    margin-top: 5%;
+    box-shadow: 0px 0px 50px orange;
 }
 .fotoJogo3{
     position: relative;
     width: 35%;
-    left: 2%;
+    margin-left: 10%;
+    margin-top: 5%;
+    box-shadow: 0px 0px 50px orange;
 }
 .fotoSite4{
     position: relative;
     width: 35%;
-    left: 2%;
+    margin-left: 10%;
+    margin-top: 5%;
+    box-shadow: 0px 0px 50px orange;
 }
-/*Define uma cor de fundo nos label*/
-label{
+
+.linkEx{
+    background-color: white;
     color: orange;
-}
-/*Estiliza os inputs*/
-input{
-    outline: 0;
-    border-top: 0;
-    border-left: 0;
-    border-right: 0;
-    border-bottom-color: orange;
-}
-/*Muda a cor de fundo quando passa o mouse por cima dos inputs*/
-input:hover{
-    background-color: rgb(255, 190, 105);
-}
-/*Estiliza o textarea*/
-textarea{
-    outline: 0;
-    border-top-color: orange;
-    border-left-color: orange;
-    border-right-color: orange;
-    border-bottom-color: orange;
-}
-/*Muda a cor de fundo quando passa o mouse por cima do textarea*/
-textarea:hover{
-    background-color: rgb(255, 190, 105);
-}
-/*Estiliza o submit*/
-.submit{
-    background-color:white;
+    border-radius: 20px;
+    box-sizing: border-box;
+    font-size: larger;
+    padding: 5px;
+    text-decoration: none;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-transform: uppercase;
-    border: 3px orange solid;
+    margin: 5px;
+    
 }
-/*Muda a cor de fundo quando passa o mouse por cima do submit*/
-.submit:hover{
+.linkEx:hover{
+    color:white;
     background-color: orange;
+    animation: changeToOrangeButtom 1s;
+
 }
-/*Ajusta a posição e tamanho dos textos e elementos de acordo com as resoluções de tela*/
-@media screen and (max-width: 2560px) and (max-height: 1080px){
-    
-    .form{
-        width: 40%;
+
+.ret1-contato{
+    background-color: black;
+    width: 60%;
+    left: 0%;
+    position: absolute;
+    top: 8%;
+    height: 92%;
+    z-index: -1;
+}
+
+.h2-contato{
+    top: 10%;
+    right: -9%;
+}
+
+.imgContato{
+    position: absolute;
+    right: 0%;
+    width: 25%;
+    margin-right: 7%;
+    top: 20%;
+    animation: entradaAnim4 1s;
+}
+
+.contatos{
+    position: absolute; 
+    right: 5%;
+    margin-top: 5%;
+    color: white;
+    text-align: center;
+    font-size: 200%;
+    text-decoration: none;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 20px;
+}
+
+.contato1{
+    background-color: rgb(0, 190, 41);
+    top: 25%;
+    width: 35%;
+    animation: entradaAnim4 1s;
+}
+.contato1img{
+    width: 6%;
+    position: absolute;
+    left: 5%;
+    top: 15%;
+}
+.contato1:hover{
+    width: 39%;
+    height: 6%;
+    top: 24%;
+    right: 3%;
+    line-height: 150%;
+    font-size: 220%;
+    color: rgb(0, 255, 106);
+    background-color: white;
+    animation: redesHover1 0.5s;
+}
+
+.contato2{
+    background-color: rgb(255, 0, 170);
+    top: 35%;
+    width: 35%;
+    animation: entradaAnim4 1s;
+}
+.contato2img{
+    width: 6%;
+    position: absolute;
+    left: 5%;
+    top: 15%;
+}
+.contato2:hover{
+    width: 39%;
+    height: 6%;
+    top: 34%;
+    right: 3%;
+    line-height: 150%;
+    font-size: 220%;
+    color: rgb(255, 0, 170);
+    background-color: white;
+    animation: redesHover2 0.5s;
+}
+
+.contato3{
+    background-color: rgb(0, 153, 255);
+    top: 45%;
+    width: 35%;
+    animation: entradaAnim4 1s;
+}
+.contato3img{
+    width: 6%;
+    position: absolute;
+    left: 5%;
+    top: 15%;
+}
+.contato3:hover{
+    width: 39%;
+    height: 6%;
+    top: 44%;
+    right: 3%;
+    line-height: 150%;
+    font-size: 220%;
+    color: rgb(0, 153, 255);
+    background-color: white;
+    animation: redesHover3 0.5s;
+}
+
+.contato4{
+    background-color: rgb(255, 0, 0);
+    top: 55%;
+    width: 35%;
+    animation: entradaAnim4 1s;
+}
+.contato4img{
+    width: 7%;
+    position: absolute;
+    left: 5%;
+    top: 15%;
+}
+.contato4:hover{
+    width: 39%;
+    height: 6%;
+    top: 54%;
+    right: 3%;
+    line-height: 150%;
+    font-size: 220%;
+    color: rgb(255, 0, 0);
+    background-color: white;
+    animation: redesHover4 0.5s;
+}
+
+@keyframes changeToOrange {
+    from{
+        color: white;
     }
-    section{
-        width: 70%;
-        margin-left: 15%;
-        margin-top: -23%;
+    to{
+        color: orange;
     }
 }
-@media screen and (max-width: 1920px) and (max-height: 1080px){
-    
-    .form{
-        width: 40%;
+@keyframes changeToOrangeButtom {
+    from{
+        color: orange;
+        background-color: white;
     }
-    section{
-        width: 70%;
-        margin-left: 20%;
-        margin-top: -30%;
-    }
-}
-@media screen and (max-width: 1680px){
-    section{
-        box-sizing: border-box;
-        margin-left: 23%;
-        margin-top: -35%;
-        width: 70%;
-    }
-    
-    .formacao_topicos{
-        box-sizing: border-box;
-        width: 50%;
+    to{
+        color: white;
+        background-color: orange;
     }
 }
-@media screen and (max-width: 1280px) and (max-height: 1024px){
-    section{
-        margin-left: 30%;
-        margin-top: -49%;
-    }
-}
-@media screen and (max-width: 1280px) and (max-height: 720px){
-    section{
-        margin-left: 30%;
-        margin-top: -49%;
-    }
-}
-@media screen and (max-width: 1024px){
-    section{
-        margin-left: 37%;
-        margin-top: -61%;
-    }
-    nav{
-        margin-top: 20%;
-    }
-    .fotoSite4{
-        position: relative;
-        width: 90%;
-        left: 2%;
-    }
-}
-@media screen and (max-width: 1080px){
-    h1{
-        font-size: 350%;
-    }
-    nav{
-        position: absolute;
-        flex-direction: column;
-        top: 11%;
-        left: 48%;
-    }
-    a{
-        font-size: 250%;
-        margin-bottom: 20%;
-    }
-    .fotoPerfil{
-        width: 50%;
-    }
-    section{
-        margin-left: 6%;
-        margin-top: 0%;
-        font-size: 220%;
-    }
-    .fotoJogo1, .fotoJogo2, .fotoJogo3{
-        width: 85%;
-    }
-    input , textarea, .linkEx{
-        font-size: 100%;
-    }
-    
-}
-@media screen and (max-width: 720px) {
-    *{
-        box-sizing: border-box;
-    }
-    h1{
+@keyframes redesHover1 {
+    from{
+        width: 35%;
+        height: 4.5%;
+        top: 25%;
+        right: 5%;
+        line-height: 100%;
         font-size: 200%;
+        color: white;
+        background-color: rgb(0, 190, 41);
     }
+    to{
+        width: 39%;
+        height: 6%;
+        top: 24%;
+        right: 3%;
+        line-height: 150%;
+        font-size: 220%;
+        color: rgb(0, 255, 106);
+        background-color: white;
+    }
+}
+@keyframes redesHover2 {
+    from{
+        width: 35%;
+        height: 4.5%;
+        top: 35%;
+        right: 5%;
+        line-height: 100%;
+        font-size: 200%;
+        color: white;
+        background-color: rgb(255, 0, 170);
+    }
+    to{
+        width: 39%;
+        height: 6%;
+        top: 34%;
+        right: 3%;
+        line-height: 150%;
+        font-size: 220%;
+        color: rgb(255, 0, 170);
+        background-color: white;
+    }
+}
+@keyframes redesHover3 {
+    from{
+        width: 35%;
+        height: 4.5%;
+        top: 45%;
+        right: 5%;
+        line-height: 100%;
+        font-size: 200%;
+        color: white;
+        background-color: rgb(0, 153, 255);
+    }
+    to{
+        width: 39%;
+        height: 6%;
+        top: 44%;
+        right: 3%;
+        line-height: 150%;
+        font-size: 220%;
+        color: rgb(0, 153, 255);
+        background-color: white;
+    }
+}
+@keyframes redesHover4 {
+    from{
+        width: 35%;
+        height: 4.5%;
+        top: 55%;
+        right: 5%;
+        line-height: 100%;
+        font-size: 200%;
+        color: white;
+        background-color: rgb(255, 0, 0);
+    }
+    to{
+        width: 39%;
+        height: 6%;
+        top: 54%;
+        right: 3%;
+        line-height: 150%;
+        font-size: 220%;
+        color: rgb(255, 0, 0);
+        background-color: white;
+    }
+}
+@keyframes entradaAnim1 {
+    from{
+        transform: translateX(-20px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+@keyframes entradaAnim2 {
+    from{
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+@keyframes entradaAnim3 {
+    from{
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+@keyframes entradaAnim4 {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@media screen and (width:2560px){
     nav{
-    
-        position: absolute;
-        flex-direction: column;
-        top: 21%;
-        left: 55%;
-    }
-    a{
-        text-align: center;
-        font-size: 100%;
-        margin-bottom: 10%;
+        top: -10%;
+        left: -2%;
     }
     .fotoPerfil{
-        margin-top: 10%;
-        width: 50%;
+        width: 18%;
+        left: 3%;
     }
-    section{
+    .nav-softskils{
+        top: 35%;
+        height: 15%;
+    }
+    .section-portifolio{
+        height: 231%;
+    }
+    .imgPortifolio{
+        top: 10%;
+    }
+    .contato1img, .contato2img, .contato3img, .contato4img{
+        top: 5%;
+    }
+}
+@media screen and (width:1680px) {
+    nav{
+        left: 3%;
+    }
+    .fotoPerfil{
+        width: 27%;
+    }
+    .h1-ret2{
+        margin-inline: 45%;
+    }
+    .p-portifolio{
+        font-size: 100%;
+    }
+    .section-portifolio{
+        height: 176%;
+    }
+    .contato1img, .contato2img, .contato3img, .contato4img{
+        top: 21%;
+    }
+}
+@media screen and (width:1280px) {
+    h1{
+        font-size: 130%;
+    }
+    nav{
+        font-size: 80%;
+        top: -12%;
+    }
+    .fotoPerfil{
+        width: 23%;
+    }
+    h2{
+        font-size: 200%;
+        margin-right: 5%;
+        top: 9%;
+    }
+    p{
+        font-size: 100%;
+        margin-right: 5%;
+        top: 17%;
+    }
+    .nav-softskils{
+        top: 35%;
+    }
+    .h1-ret2{
+        font-size: 100%;
+    }
+    .section-portifolio{
+        height: 252%;
+    }
+    .imgPortifolio{
+        top: 10%;
+    }
+    .h2-contato{
+        right: 1%;
+    }
+    .contato1, .contato2, .contato3, .contato4{
+        font-size: 150%;
+
+    }
+    .contato1:hover, .contato2:hover, .contato3:hover, .contato4:hover{
+        line-height: 100%;
+    }
+    
+    .contato1img, .contato2img, .contato3img, .contato4img{
+        top: 18%;
+    }
+    @keyframes redesHover1 {
+        to{
+            line-height: 100%;
+        }
+    }
+    @keyframes redesHover2 {
+        to{
+            line-height: 100%;
+        }
+    }
+    @keyframes redesHover3 {
+        to{
+            line-height: 100%;
+        }
+    }
+    @keyframes redesHover4 {
+        to{
+            line-height: 100%;
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    h1{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        margin-inline: 0%;
+    }
+    nav{
+        margin-inline: 8%;
+        top: 50%;
+    }
+    header{
+        height: 12%;
+    }
+    h2{
+        font-size: 150%;
+        margin-inline: 0%;
+        justify-content: center;
+        display: flex;
+        position: relative;
+        top: 1%;
+    }
+    p{
+        font-size: 100%;
+        margin-inline: 5%;
+        justify-content: center;
+        display: flex;
+        position: relative;
+        top: -5%;
         width: 90%;
-        margin-left: 6%;
-        margin-top: 0%;
-        font-size: 105%;
+        text-align: center;
     }
-    .form{
+    .ret1{
+        top: 60%;
+        height: 40%;
         width: 100%;
     }
-    .formacao_topicos{
+    .fotoPerfil{
+        top: 15%;
+        width: 60%;
+        z-index: -1;
+        margin-inline: 20%;
+    }
+    .h1-ret2{
         font-size: 100%;
-        width: 90%;
+        margin-inline: 0%;
     }
-    .fotoJogo1, .fotoJogo2, .fotoJogo3, .fotoSite4{
-        width: 85%;
+    .ret2{
+        display: none;
     }
-    input , textarea, .linkEx{
-        font-size: 100%;
+    .ret1-formacao{
+        height: 70%;
+        bottom: 0%;
+        width: 100%;
     }
-    
+    p{
+        top: 1%;
+    }
+    .imgFormacao{
+        width: 50%;
+        top: 15%;
+        margin-inline: 25%;
+    }
+    .ret1-portifolio{
+        width: 100%;
+        top: 22%;
+    }
+    .imgPortifolio{
+        top: 7%;
+        width: 50%;
+        margin-left: 0%;
+        margin-inline: 25%;
+    }
+    .h2-portifolio{
+        justify-content: center;
+        display: flex;
+        position: relative;
+        margin-right: 0%;
+    }
+    .section-portifolio{
+        height: 180%;
+    }
+    .fotoSite4{
+        margin: 0%;
+        margin-inline: 33%;
+    }
+    .fotoJogo3{
+        margin: 0%;
+        margin-inline: 33%;
+    }
+    .fotoJogo2{
+        margin: 0%;
+        margin-inline: 33%;
+    }
+    h3{
+        margin: 0%;
+        justify-content: center;
+        display: flex;
+    }
+    .p-portifolio{
+        justify-content: center;
+        display: flex;
+        position: relative;
+        margin: 0%;
+        margin-inline: 5%;
+        margin-top: 5%;
+        margin-bottom: 20%;
+        text-align: center;
+    }
+    .linkEx{
+        position: absolute;
+        bottom: -20%;
+        float: left;
+    }
+    .ret1-contato{
+        height: 70%;
+        top: 40%;
+        width: 100%;
+    }
+    .section-contato{
+        height: 100%;
+    }
+    .imgContato{
+        width: 50%;
+        top: 15%;
+        margin-inline: 25%;
+    }
+    .h2-contato{
+        margin: 0%;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        left: 0%;
+    }
+
+    .contatos{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        margin-inline: 20%;
+        left: 0%;
+        width: 60%;
+        top: 15%;
+        animation: none;
+    }
+    .contatos:hover{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        margin-inline: 20%;
+        left: 0%;
+        width: 60%;
+        top: 15%;
+        animation: none;
+    }
+    .contato1img, .contato2img, .contato3img, .contato4img{
+        width: 10%;
+        
+    }
+
+
 }
